@@ -21,8 +21,7 @@ int main(void) {
     unsigned char tmpA1 = 0x00;
     /* Insert your solution below */
     while (1) {
-	tmpA0 = PINA & 0x01;
-	tmpA1 = PINA & 0x10;
+	tmpA0 = PINA & 0x01; tmpA1 = PINA & 0x10;
 	if ((tmpA0 == 0x01) && (tmpA1 == 0x00)) { // True if PA0 is 1
            tmpB = (tmpB & 0xFE) | 0x01; 
 	}
