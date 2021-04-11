@@ -20,7 +20,7 @@ int main(void) {
     unsigned char tmpA1 = 0x00;
     unsigned char tmpA2 = 0x00;
     unsigned char tmpA3 = 0x00;
-    unsigned char cntavail = 0;
+    unsigned char cntavail = 0x00;
     /* Insert your solution below */
     while (1) {
 	tmpA = PINA & 0x0F;
