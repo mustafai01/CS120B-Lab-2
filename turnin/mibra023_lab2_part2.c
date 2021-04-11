@@ -28,49 +28,49 @@ int main(void) {
 	if (tmpA == 0x00) {
         	cntavail = 4;
 	}
-	if (tmpA == 0x01) {
+	else if (tmpA == 0x01) {
         	cntavail = 3;
 	}
-	if (tmpA == 0x02) {
+	else if (tmpA == 0x02) {
         	cntavail = 3;
 	}
-	if (tmpA == 0x03) {
+	else if (tmpA == 0x03) {
         	cntavail = 2;
 	}
-	if (tmpA == 0x04) {
+	else if (tmpA == 0x04) {
         	cntavail = 3;
 	}
-	if (tmpA == 0x05) {
+	else if (tmpA == 0x05) {
         	cntavail = 2;
 	}
-	if (tmpA == 0x06) {
+	else if (tmpA == 0x06) {
         	cntavail = 2;
 	}
-	if (tmpA == 0x07) {
+	else if (tmpA == 0x07) {
         	cntavail = 1;
 	}
-	if (tmpA == 0x08) {
+	else if (tmpA == 0x08) {
         	cntavail = 3;
 	}
-	if (tmpA == 0x09) {
+	else if (tmpA == 0x09) {
         	cntavail = 2;
 	}
-	if (tmpA == 0x0A) {
+	else if (tmpA == 0x0A) {
         	cntavail = 2;
 	}
-	if (tmpA == 0x0B) {
+	else if (tmpA == 0x0B) {
         	cntavail = 1;
 	}
-	if (tmpA == 0x0C) {
+	else if (tmpA == 0x0C) {
         	cntavail = 2;
 	}
-	if (tmpA == 0x0D) {
+	else if (tmpA == 0x0D) {
         	cntavail = 1;
 	}
-	if (tmpA == 0x0E) {
+	else if (tmpA == 0x0E) {
         	cntavail = 1;
 	}
-	if (tmpA == 0x0F) {
+	else if (tmpA == 0x0F) {
         	cntavail = 0;
 	}
 	
