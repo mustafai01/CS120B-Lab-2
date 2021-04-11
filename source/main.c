@@ -71,6 +71,10 @@ int main(void) {
         	cntavail = 0;
 	}
 	
+	if (cntavail == 0) {
+	cntavail = 0x80;
+	}
+
 	PORTC = cntavail;
 
     }
