@@ -23,23 +23,56 @@ int main(void) {
     unsigned char cntavail = 0;
     /* Insert your solution below */
     while (1) {
-	tmpA0 = PINA & 0x01;
-	tmpA1 = PINA & 0x02;
-	tmpA2 = PINA & 0x04;
-	tmpA3 = PINA & 0x08;
+	tmpA = PINA & 0x0F;
 
-	if (tmpA0 == 0x00) {
-        	cntavail += 1;
+	if (tmpA == 0x00) {
+        	cntavail = 4;
 	}
-	if ((tmpA1 >> 1) == 0x00) {
-                cntavail += 1;
-        }
-	if ((tmpA2 >> 2) == 0x00) {
-                cntavail += 1;
-        }
-	if ((tmpA3 >> 3) == 0x00) {
-                cntavail += 1;
-        }
+	if (tmpA == 0x01) {
+        	cntavail = 3;
+	}
+	if (tmpA == 0x02) {
+        	cntavail = 3;
+	}
+	if (tmpA == 0x03) {
+        	cntavail = 2;
+	}
+	if (tmpA == 0x04) {
+        	cntavail = 3;
+	}
+	if (tmpA == 0x05) {
+        	cntavail = 2;
+	}
+	if (tmpA == 0x06) {
+        	cntavail = 2;
+	}
+	if (tmpA == 0x07) {
+        	cntavail = 1;
+	}
+	if (tmpA == 0x08) {
+        	cntavail = 3;
+	}
+	if (tmpA == 0x09) {
+        	cntavail = 2;
+	}
+	if (tmpA == 0x0A) {
+        	cntavail = 2;
+	}
+	if (tmpA == 0x0B) {
+        	cntavail = 1;
+	}
+	if (tmpA == 0x0C) {
+        	cntavail = 2;
+	}
+	if (tmpA == 0x0D) {
+        	cntavail = 1;
+	}
+	if (tmpA == 0x0E) {
+        	cntavail = 1;
+	}
+	if (tmpA == 0x0F) {
+        	cntavail = 0;
+	}
 	
 	PORTC = cntavail;
 
